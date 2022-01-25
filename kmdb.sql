@@ -166,3 +166,17 @@ VALUES ("The Dark Knight Rises", "Joseph Gordon-Levitt", "John Blake");
 
 INSERT INTO top_cast (title, name, role)
 VALUES ("The Dark Knight Rises", "Anne Hathaway", "Selina Kyle");
+
+
+.print "Movies"
+.print "======"
+.print ""
+SELECT title, year, mpaa_rating, director 
+FROM movies;
+
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
+SELECT title, name, role
+FROM top_cast;
